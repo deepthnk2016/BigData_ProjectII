@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS project;
+
+USE project;
+
+CREATE TABLE User_Artist_Map
+
+(
+user_id STRING,
+artists_array ARRAY<STRING>
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+COLLECTION ITEMS TERMINATED BY '&';
+LOAD DATA LOCAL INPATH '/home/maria_dev/project/Lookup/user-artist.txt'
+
+OVERWRITE INTO TABLE User_Artist_Map;
