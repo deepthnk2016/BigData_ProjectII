@@ -3,7 +3,7 @@ Project - Music Data Analysis
 
 This project contains all the scripts to carryout the requirement of the project - Music Data Analysis.
 
-1. Genrate Data - generate_mob_data.py & generate_web_data.py
+1. Generate Data - generate_mob_data.py & generate_web_data.py
 2. Populate Lookup Tables to HBase - populatelookup.sh
 3. Format Data - formatdata.sh & formatdata.pig
 4. Load Formatted Data to Hive - loadformatteddata.sh, loadformatteddata.hql
